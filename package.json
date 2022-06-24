@@ -1,0 +1,25 @@
+{
+  "name": "random-seed",
+  "version": "1.0.0",
+  "description": "Random data for seeding",
+  "main": "rseed.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notN33T/random-seed.git"
+  },
+  "keywords": [
+    "rseed"
+  ],
+  "author": "PTN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notN33T/random-seed/issues"
+  },
+  "homepage": "https://github.com/notN33T/random-seed#readme"
+}
