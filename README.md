@@ -1,0 +1,1 @@
+Package random-seed created to simplify process of seeding for database, of for anything else

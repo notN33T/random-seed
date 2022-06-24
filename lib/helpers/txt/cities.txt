@@ -1,0 +1,583 @@
+A Coruña
+Aachen
+Aarhus
+Abbeville
+Aberdeen
+Abidjan
+Abilene
+Abu Dhabi
+Abuja
+Acapulco
+Accra
+Adamstown
+Addis Ababa
+Adelaide
+Adelboden
+Agadir
+Agde
+Agen
+Agios Nikolaos
+Agra
+Agrigento
+Agropoli
+Ahmedabad
+Aigues-Mortes
+Aix-en-Provence
+Aix-les-Bains
+Ajaccio
+Ajman
+Akron
+Al Ain
+Alanya
+Alaró
+Albacete
+Albany
+Albenga
+Albi
+Albufeira
+Albuquerque
+Alcudia
+Aleppo
+Alessandria
+Ålesund
+Alexandria
+Algeciras
+Alghero
+Algiers
+Alicante
+Alkmaar
+Allentown
+Almaty
+Alofi
+Alpe d'Huez
+Alta Badia
+Altea
+Altoona
+Amalfi
+Amapala
+Amarillo
+Amersfoort
+Amiens
+Amman
+Amsterdam
+Anaheim
+Anchorage
+Ancona
+Andalo
+Andermatt
+Andorra la Vella
+Andratx
+Andria
+Angers
+Angoulême
+Ankara
+Ann Arbor
+Annapolis
+Annecy
+Antalya
+Antananarivo
+Antibes
+Antigua Guatemala
+Antwerp
+Anzio
+Ao Nang
+Aosta
+Apeldoorn
+Apia
+Appleton
+Aqaba
+Aracaju
+Arcachon
+Arenzano
+Arequipa
+Arezzo
+Argostoli
+Arica
+Arles
+Armagh
+Arnhem
+Arosa
+Arras
+Arrecife
+Artà
+Asbury Park
+Ascoli Piceno
+Ascona
+Ashdod
+Ashgabat
+Ashkelon
+Asmara
+Aspen
+Asti
+Astoria
+Asunción
+Atafu
+Athens
+Athlone
+Atlanta
+Atlantic City
+Auckland
+Augsburg
+Austin
+Auxerre
+Avarua
+Aveiro
+Avellino
+Avignon
+Avila Beach
+Avoriaz
+Axamer Lizum
+Ayia Napa
+Azusa
+Bad Gastein
+Bad Hofgastein
+Baden
+Baghdad
+Baiona
+Bakersfield
+Baku
+Baltimore
+Bamako
+Bandar Seri Begawan
+Bandol
+Bangalore
+Bangkok
+Bangor
+Bangui
+Banjul
+Bar
+Bar Harbor
+Barcelona
+Bari
+Barletta
+Barstow
+Basel
+Basseterre
+Basse-Terre
+Bastia
+Bata
+Bath
+Baton Rouge
+Batumi
+Bayonne
+Beaulieu-sur-Mer
+Beaumont
+Beaune
+Beersheba
+Beijing
+Beirut
+Belfast
+Belfort
+Belgrade
+Belize City
+Bellingham
+Bellinzona
+Belluno
+Belmopan
+Belo Horizonte
+Bemidji
+Benalmadena
+Bend
+Bendigo
+Benevento
+Benicàssim
+Benidorm
+Bergamo
+Bergen
+Bergerac
+Berkeley
+Berlin
+Bern
+Besançon
+Bethlehem
+Beverly Hills
+Béziers
+Biarritz
+Biel/Bienne
+Bielefeld
+Biella
+Bilbao
+Billings
+Biloxi
+Birmingham
+Birmingham
+Bishkek
+Bismarck
+Bissau
+Blanes
+Bled
+Blois
+Bloomington
+Blumenau
+Boca Chica
+Boca Raton
+Bochum
+Bodrum
+Bogotá
+Boise
+Bologna
+Bolzano
+Bonifacio
+Bonn
+Bordeaux
+Bordighera
+Bormio
+Boston
+Boulder
+Boulogne-sur-Mer
+Bourges
+Bowling Green
+Boynton Beach
+Bozeman
+Bradenton
+Bradford
+Braga
+Brampton
+Brasilia
+Bratislava
+Braunschweig
+Brazzaville
+Breda
+Bregenz
+Brela
+Bremen
+Bremerhaven
+Brescia
+Brest
+Briançon
+Bridgeport
+Bridgetown
+Brighton
+Brindisi
+Brisbane
+Bristol
+Brixen
+Brixental
+Brno
+Brookings
+Brownsville
+Bruges
+Brussels
+Bucharest
+Budapest
+Budva
+Buenos Aires
+Buffalo
+Bujumbura
+Burgas
+Burlington
+Burnt Pine
+Butte
+Cabo San Lucas
+Cadaqués
+Cádiz
+Caen
+Cagliari
+Cagnes-sur-Mer
+Cairns
+Cairo
+Cala Bona
+Cala d'Or
+Cala Millor
+Cala Ratjada
+Calais
+Calella
+Calgary
+Cali
+Caloundra
+Calp
+Caltanissetta
+Calvi
+Cambridge
+Cambridge
+Cambrils
+Camden
+Campinas
+Campobasso
+Can Pastilla
+Can Picafort
+Canazei
+Canberra
+Cancun
+Cannes
+Cannon Beach
+Canterbury
+Canton
+Canyamel
+Capdepera
+Cape Canaveral
+Cape Coral
+Cape May
+Cape Town
+Capitola
+Caracas
+Carbonia
+Carcassonne
+Cardiff
+Carlisle
+Carlsbad
+Carmel-by-the-Sea
+Carpi
+Carpinteria
+Carrara
+Carson City
+Cartagena 
+Casablanca
+Caserta
+Casper
+Cassis
+Castellón de la Plana
+Castelrotto
+Castletown
+Castries
+Catania
+Catanzaro
+Caxias do Sul
+Cayenne
+Cedar Rapids
+Celle
+Cervinia
+Cesena
+Český Krumlov
+Çeşme
+Chamonix
+Chandler
+Chania
+Charleroi
+Charlestown
+Charlotte
+Charlotte Amalie
+Charlottetown
+Chartres
+Chattanooga
+Chelmsford
+Chemnitz
+Chennai
+Cherbourg
+Chesapeake
+Chester
+Cheyenne
+Chiang Mai
+Chiang Rai
+Chiavari
+Chicago
+Chichester
+Chiclayo
+Chieti
+Chincoteague
+Chioggia
+Chios
+Chișinău
+Chonburi
+Christchurch
+Christiansted
+Chula Vista
+Chur
+Cincinnati
+Ciutadella de Menorca
+Civitavecchia
+Clarksville
+Clearwater
+Clermont-Ferrand
+Cleveland
+Cockburn Town
+Cocoa Beach
+Coconut Creek
+Coimbra
+Collioure
+Colmar
+Cologne
+Colombo
+Colón
+Colonia del Sacramento
+Colorado Springs
+Columbus
+Como
+Conakry
+Concepción
+Concord
+Conil de la Frontera
+Conway
+Copenhagen
+Coral Springs
+Córdoba
+Córdoba 
+Corfu
+Corinth
+Cork
+Coro
+Corpus Christi
+Corralejo
+Cortina d'Ampezzo
+Cosenza
+Costa Adeje
+Cottbus
+Courchevel
+Courmayeur
+Coventry
+Covington
+Coxen Hole
+Coyhaique
+Cozumel
+Crans-Montana
+Cremona
+Crotone
+Cruz Bay
+Cuenca
+Cuenca 
+Cumaná
+Cuneo
+Cusco
+Da Nang
+Dachau
+Dahab
+Dakar
+Dallas
+Damascus
+Dana Point
+Dar es Salaam
+Darmstadt
+Darwin
+Daugavpils
+Dauphin Island
+Davenport
+Davos
+Dayton
+Daytona Beach
+Deauville
+Decatur
+Deerfield Beach
+Del Mar
+Delft
+Delhi
+Delray Beach
+Den Bosch
+Denia
+Denton
+Denver
+Derby
+Derry
+Des Moines
+Detroit
+Dhaka
+Didim
+Dieppe
+Dijon
+Dili
+Djibouti
+Dodoma
+Doha
+Dolomiti Superski
+Dordrecht
+Dorfgastein
+Dortmund
+Dothan
+Douala
+Douglas
+Dover
+Dover
+Dresden
+Dubai
+Dublin
+Dubrovnik
+Duisburg
+Duluth
+Dundalk
+Dundee
+Dunedin
+Dunkirk
+Durham
+Durham
+Dushanbe
+Düsseldorf
+Eastbourne
+Eau Claire
+Edgartown
+Edinburgh
+Edmonton
+Eilat
+Eindhoven
+El Paso
+Elche
+Elizabeth
+Elko
+Ellmau
+Elm
+Empuriabrava
+Encinitas
+Engelberg
+Enna
+Enschede
+Épinal
+Erfurt
+Erie
+Erlangen
+Esbjerg
+Espace Killy
+Essaouira
+Essen
+Estepona
+Eugene
+Eureka
+Evansville
+Everett
+Exeter
+Èze
+
+Faenza
+Fairbanks
+Fakaofo
+Falmouth
+Famagusta
+Fano
+Fargo
+Faro
+Fayetteville
+Fayetteville
+Fermo
+Fernandina Beach
+Ferrara
+Fethiye
+Fez
+Fieberbrunn
+Filzmoos
+Finale Ligure
+Fiumicino
+Flagstaff
+Flaine
+Flint
+Florence
+Florence
+Flores
+Foggia
+Folgarida
+Fontana
+Forlì
+Fort Collins
+Fort Lauderdale
+Fort Myers
+Fort Smith
+Fort Wayne
+Fort Worth
+Fort-de-France
+Forte dei Marmi
+Foz do Iguaçu
+Frankfort
+Frankfurt am Main
+Franklin
+Frederick
+Fredericton
+Frederiksted
+Freeport
+Freetown
+Freiburg
+Fremont
+Fresno
+Fribourg
+Frosinone
+Fuengirola
+Fujairah
+Fukuoka
+Funafuti
+Funchal
+Gaborone
