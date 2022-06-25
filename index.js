@@ -1,9 +1,9 @@
-const names = require('random-seed/lib/names');
-const surnames = require('random-seed/lib/surnames');
-const middleNames = require('random-seed/lib/middlenames');
-const pets = require('random-seed/lib/pets');
-const countries = require('random-seed/lib/countries');
-const cities = require('random-seed/lib/cities');
+const names = require('./lib/names');
+const surnames = require('./lib/surnames');
+const middleNames = require('./lib/middlenames');
+const pets = require('./lib/pets');
+const countries = require('./lib/countries');
+const cities = require('./lib/cities');
 
 class RandomSeed {
   result = {}
