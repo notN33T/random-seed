@@ -1,5 +1,5 @@
 {
-  "name": "random-seed",
+  "name": "rseed",
   "version": "1.0.0",
   "description": "Random data for seeding",
   "main": "index.js",
