@@ -11,9 +11,13 @@ class RandomSeed {
 
   // Get names method
   getNames (amount = 1) {
-    let i = 0;
+    if (amount <= 0) {
+      throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+    }
+
     const randomArrayOfNames = [];
 
+    let i = 0;
     while (i <= amount - 1) {
       randomArrayOfNames.push(names[Math.floor(Math.random() * names.length)]);
       i ++;
@@ -25,9 +29,13 @@ class RandomSeed {
 
   // Get surnames method
   getSurnames (amount = 1) {
-    let i = 0;
-    const randomArrayOfSurnames = [];
+    if (amount <= 0) {
+      throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+    }
 
+    const randomArrayOfSurnames = [];
+    
+    let i = 0;
     while (i <= amount - 1) {
       randomArrayOfSurnames.push(surnames[Math.floor(Math.random() * surnames.length)]);
       i ++;
@@ -39,9 +47,13 @@ class RandomSeed {
 
     // Get middle names method
     getMiddleNames (amount = 1) {
-      let i = 0;
+      if (amount <= 0) {
+        throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+      }
+
       const randomArrayOfMiddleNames = [];
-  
+      
+      let i = 0;
       while (i <= amount - 1) {
         randomArrayOfMiddleNames.push(middleNames[Math.floor(Math.random() * middleNames.length)]);
         i ++;
@@ -53,9 +65,13 @@ class RandomSeed {
     
     // Get pets names method
     getPetsNames (amount = 1) {
-      let i = 0;
+      if (amount <= 0) {
+        throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+      }
+
       const randomArrayOfPetsNames = [];
-  
+      
+      let i = 0;
       while (i <= amount - 1) {
         randomArrayOfPetsNames.push(pets[Math.floor(Math.random() * pets.length)]);
         i ++;
@@ -67,9 +83,13 @@ class RandomSeed {
 
      // Get countries names method
      getCountriesNames (amount = 1) {
-      let i = 0;
+      if (amount <= 0) {
+        throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+      }
+
       const randomArrayOfCountriesNames = [];
-  
+      
+      let i = 0;
       while (i <= amount - 1) {
         randomArrayOfCountriesNames.push(countries[Math.floor(Math.random() * countries.length)]);
         i ++;
@@ -81,9 +101,13 @@ class RandomSeed {
 
       // Get cities method
       getCitiesNames (amount = 1) {
-        let i = 0;
+        if (amount <= 0) {
+          throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+        }
+
         const randomArrayOfCitiesNames = [];
-    
+        
+        let i = 0;
         while (i <= amount - 1) {
           randomArrayOfCitiesNames.push(cities[Math.floor(Math.random() * cities.length)]);
           i ++;
@@ -95,9 +119,12 @@ class RandomSeed {
 
       // Get phone numbers method
       getPhoneNumbers (amount = 1) {
-        let i = 0;
+        if (amount <= 0) {
+          throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+        }
         const randomArrayOfPhoneNumbers = [];
-    
+        
+        let i = 0;
         while (i <= amount - 1) {
           randomArrayOfPhoneNumbers.push(
             '+' +
@@ -118,16 +145,33 @@ class RandomSeed {
 
       // Get age method
       getAge(amount = 1, min = 0, max = 120) {
-        let i = 0;
-        max += 1;
-        const randomArrayOfAges = [];
+        if (amount <= 0) {
+          throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+        }
+        if (max < min) {
+          throw new Error(`Error, max should be more or equal to min, got max: ${max}, min: ${min}`);
+        }
+        if (max < 0 || min < 0) {
+          throw new Error(`Error, min or max should be more or equal to 0, got max: ${max}, min: ${min}`);
+        }
+        if (min < 0) {
+          throw new Error(`Error, min should be more or equal to 0, got ${min}`);
+        }
+        if (max >= 100000000000000) {
+          throw new Error(`Error, min should be less or equal to 100000000000000, got ${max}`);
+        }
 
+        const randomArrayOfAges = [];    
+    
+        max += 1;
+        let i = 0;
         while (i <= amount - 1) {
           randomArrayOfAges.push(
             Math.floor(Math.random() * (max - min)) + min
           )
           i++;
         }
+      
         this.result = { ...this.result, ages: randomArrayOfAges };
         return this;
       }
