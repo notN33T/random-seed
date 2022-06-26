@@ -4,6 +4,7 @@ const middleNames = require('./lib/middlenames');
 const pets = require('./lib/pets');
 const countries = require('./lib/countries');
 const cities = require('./lib/cities');
+const codes = require('./lib/phoneCodes.txt');
 
 class RandomSeed {
   result = {}
@@ -89,6 +90,29 @@ class RandomSeed {
           }
       
           this.result = { ...this.result, cities: randomArrayOfCitiesNames };
+          return this;
+        }
+
+        // Get phone numbers method
+      getPhoneNumbers (amount = 1) {
+        let i = 0
+          const randomArrayOfPhoneNumbers = [];
+      
+          while (i <= amount - 1) {
+            randomArrayOfPhoneNumbers.push(
+              '+' +
+              (codes[Math.floor(Math.random() * codes.length)] +
+              Math.floor(Math.random() * 9) +
+              Math.floor(Math.random() * 9) +
+              Math.floor(Math.random() * 9) +
+              Math.floor(Math.random() * 9) +
+              Math.floor(Math.random() * 9) +
+              Math.floor(Math.random() * 9))
+              );
+            i ++;
+          }
+      
+          this.result = { ...this.result, phoneNumbers: randomArrayOfPhoneNumbers };
           return this;
         }
 }
