@@ -1,6 +1,6 @@
 {
   "name": "rseed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Random data for seeding",
   "main": "index.js",
   "directories": {
