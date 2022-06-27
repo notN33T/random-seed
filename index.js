@@ -4,7 +4,7 @@ const middleNames = require('./lib/middlenames');
 const pets = require('./lib/pets');
 const countries = require('./lib/countries');
 const cities = require('./lib/cities');
-const codes = require('./lib/phoneCodes.txt');
+const codes = require('./lib/phoneCodes');
 
 class RandomSeed {
   result = {}
