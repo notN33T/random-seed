@@ -1,6 +1,6 @@
 {
   "name": "rseed",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Random data for seeding",
   "main": "index.js",
   "directories": {
@@ -14,7 +14,9 @@
     "url": "git+https://github.com/notN33T/random-seed.git"
   },
   "keywords": [
-    "rseed", "random seeding", "seeding"
+    "rseed",
+    "random seeding",
+    "seeding"
   ],
   "author": "PTN",
   "license": "ISC",
