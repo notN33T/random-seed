@@ -37,7 +37,7 @@ rseed.getNames(5).getSurnames(2).result
 - getCountriesNames(amount) (countries at result object)
 - getCitiesNames(amount) (cities at result object)
 - getPhoneNumbers(amount) (phoneNumbers at result object)
-- getAge(amount, min, max) (age at result object)
+- getAge(amount, min, max) (ages at result object)
 
 
 ## Roadmap
