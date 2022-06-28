@@ -5,6 +5,7 @@ const pets = require('./lib/data/pets');
 const countries = require('./lib/data/countries');
 const cities = require('./lib/data/cities');
 const codes = require('./lib/data/phoneCodes');
+const mails = require('./lib/data/mails');
 
 class RandomSeed {
   result = {}
@@ -144,7 +145,7 @@ class RandomSeed {
       }
 
       // Get age method
-      getAge(amount = 1, min = 0, max = 120) {
+      getAges(amount = 1, min = 0, max = 120) {
         if (amount <= 0) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
@@ -173,6 +174,31 @@ class RandomSeed {
         }
       
         this.result = { ...this.result, ages: randomArrayOfAges };
+        return this;
+      }
+
+      // Get mails method
+      getMails(amount = 1) {
+        if (amount <= 0) {
+          throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+        }
+
+        const randomArrayOfMails = [];    
+
+        let i = 0;
+        while (i <= amount - 1) {
+          randomArrayOfMails.push(
+            names[Math.floor(Math.random() * names.length)] +
+            Math.floor(Math.random() * 9) +
+            Math.floor(Math.random() * 9) +
+            Math.floor(Math.random() * 9) +
+            `@` +
+            mails[Math.floor(Math.random() * mails.length)]
+            );
+          i ++;
+        }
+    
+        this.result = { ...this.result, mails: randomArrayOfMails };
         return this;
       }
 }
