@@ -1,6 +1,6 @@
 {
   "name": "rseed",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Random data for seeding",
   "main": "index.js",
   "directories": {
@@ -16,7 +16,8 @@
   "keywords": [
     "rseed",
     "random seeding",
-    "seeding"
+    "seeding",
+    "random data"
   ],
   "author": "PTN",
   "license": "ISC",

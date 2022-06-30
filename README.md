@@ -1,7 +1,7 @@
 
 # Random seed
 
-This module was created to simplify process of seeding
+This module was created to simplify process of seeding. With this package you can get any amount of random data you need. You can use it to seed the database or for something else
 
 
 ## Installing
@@ -30,23 +30,28 @@ rseed.getNames(5).getSurnames(2).result
 
 ## All methods
 
-- getNames(amount) (names at result object)
-- getSurnames(amount) (surnames at result object)
-- getMiddleNames(amount) (middleNames at result object)
-- getPetsNames(amount) (pets at result object)
-- getCountriesNames(amount) (countries at result object)
-- getCitiesNames(amount) (cities at result object)
-- getPhoneNumbers(amount) (phoneNumbers at result object)
-- getAges(amount, min, max) (ages at result object)
-- getMails(amount) (mails at result object)
+- getNames(amount) (names in result object)
+- getSurnames(amount) (surnames in result object)
+- getMiddleNames(amount) (middleNames in result object)
+- getPetsNames(amount) (pets in result object)
+- getCountriesNames(amount) (countries in result object)
+- getCitiesNames(amount) (cities in result object)
+- getPhoneNumbers(amount) (phoneNumbers in result object)
+- getAges(amount, min, max) (ages in result object)
+- getMails(amount) (mails in result object)
+- getRandomWords(amount) (randomWords in result object)
+- getTestText(amountOfLetters) (text in result object)
 
 
 ## Roadmap
 
 - Add more methods
+- Add typeScript
 
 
-## What's new in version 1.1.0
 
-- New method getMails() to get fake random mail addresses
-- Some fixes
+## What's new in version 1.2.0
+
+- New method getRandomWords(amount) to generate array with random words
+- New method getTestText(amountOfLetters) to generate text with any amount of letters (default 40)
+- More error handling
