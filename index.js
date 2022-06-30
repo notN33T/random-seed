@@ -6,13 +6,15 @@ const countries = require('./lib/data/countries');
 const cities = require('./lib/data/cities');
 const codes = require('./lib/data/phoneCodes');
 const mails = require('./lib/data/mails');
+const randomWords = require('./lib/data/randomWords');
+const description = require('./lib/data/description');
 
 class RandomSeed {
   result = {}
 
   // Get names method
   getNames (amount = 1) {
-    if (amount <= 0) {
+    if (amount < 1) {
       throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
     }
 
@@ -30,7 +32,7 @@ class RandomSeed {
 
   // Get surnames method
   getSurnames (amount = 1) {
-    if (amount <= 0) {
+    if (amount < 1) {
       throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
     }
 
@@ -48,7 +50,7 @@ class RandomSeed {
 
     // Get middle names method
     getMiddleNames (amount = 1) {
-      if (amount <= 0) {
+      if (amount < 1) {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
 
@@ -66,7 +68,7 @@ class RandomSeed {
     
     // Get pets names method
     getPetsNames (amount = 1) {
-      if (amount <= 0) {
+      if (amount < 1) {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
 
@@ -84,7 +86,7 @@ class RandomSeed {
 
      // Get countries names method
      getCountriesNames (amount = 1) {
-      if (amount <= 0) {
+      if (amount < 1) {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
 
@@ -102,7 +104,7 @@ class RandomSeed {
 
       // Get cities method
       getCitiesNames (amount = 1) {
-        if (amount <= 0) {
+        if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
 
@@ -120,7 +122,7 @@ class RandomSeed {
 
       // Get phone numbers method
       getPhoneNumbers (amount = 1) {
-        if (amount <= 0) {
+        if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
         const randomArrayOfPhoneNumbers = [];
@@ -146,7 +148,7 @@ class RandomSeed {
 
       // Get age method
       getAges(amount = 1, min = 0, max = 120) {
-        if (amount <= 0) {
+        if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
         if (max < min) {
@@ -179,7 +181,7 @@ class RandomSeed {
 
       // Get mails method
       getMails(amount = 1) {
-        if (amount <= 0) {
+        if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
 
@@ -200,6 +202,42 @@ class RandomSeed {
     
         this.result = { ...this.result, mails: randomArrayOfMails };
         return this;
+      }
+
+      // Ger random words method
+      getRandomWords(amount = 1) {
+        if (amount < 1) {
+          throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+        }
+    
+        const randomArrayOfWords = [];
+    
+        let i = 0;
+        while (i <= amount - 1) {
+          randomArrayOfWords.push(randomWords[Math.floor(Math.random() * randomWords.length)]);
+          i ++;
+        }
+    
+        this.result = { ...this.result, randomWords: randomArrayOfWords };
+        return this;
+      }
+
+      // Get test text method
+      getTestText(amountOfLetters = 50) {
+        if (amountOfLetters < 1) {
+          throw new Error(`Error, amountOfLetters should be more or equal to 1, got ${amount}`);
+        }
+
+
+        let testText = description;
+        let i = 0;
+        while (testText.length < amountOfLetters) {
+          testText += description;
+        }
+
+        testText.length = amountOfLetters;
+
+        this.result = { ...this.result, text: testText }
       }
 }
 
