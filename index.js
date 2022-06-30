@@ -17,6 +17,9 @@ class RandomSeed {
     if (amount < 1) {
       throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
     }
+    if (amount >= 100000000) {
+      throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+    }
 
     const randomArrayOfNames = [];
 
@@ -35,6 +38,9 @@ class RandomSeed {
     if (amount < 1) {
       throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
     }
+    if (amount >= 100000000) {
+      throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+    }
 
     const randomArrayOfSurnames = [];
     
@@ -42,7 +48,7 @@ class RandomSeed {
     while (i <= amount - 1) {
       randomArrayOfSurnames.push(surnames[Math.floor(Math.random() * surnames.length)]);
       i ++;
-    } 
+    }
 
     this.result = { ...this.result, surnames: randomArrayOfSurnames };
     return this;
@@ -53,6 +59,9 @@ class RandomSeed {
       if (amount < 1) {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
+      if (amount >= 100000000) {
+        throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+      }
 
       const randomArrayOfMiddleNames = [];
       
@@ -60,7 +69,7 @@ class RandomSeed {
       while (i <= amount - 1) {
         randomArrayOfMiddleNames.push(middleNames[Math.floor(Math.random() * middleNames.length)]);
         i ++;
-      } 
+      }
   
       this.result = { ...this.result, middleNames: randomArrayOfMiddleNames };
       return this;
@@ -70,6 +79,9 @@ class RandomSeed {
     getPetsNames (amount = 1) {
       if (amount < 1) {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+      }
+      if (amount >= 100000000) {
+        throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
       }
 
       const randomArrayOfPetsNames = [];
@@ -89,6 +101,9 @@ class RandomSeed {
       if (amount < 1) {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
+      if (amount >= 100000000) {
+        throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+      }
 
       const randomArrayOfCountriesNames = [];
       
@@ -106,6 +121,9 @@ class RandomSeed {
       getCitiesNames (amount = 1) {
         if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+        }
+        if (amount >= 100000000) {
+          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
         }
 
         const randomArrayOfCitiesNames = [];
@@ -125,6 +143,10 @@ class RandomSeed {
         if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
+        if (amount >= 100000000) {
+          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+        }
+
         const randomArrayOfPhoneNumbers = [];
         
         let i = 0;
@@ -150,6 +172,9 @@ class RandomSeed {
       getAges(amount = 1, min = 0, max = 120) {
         if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
+        }
+        if (amount >= 100000000) {
+          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
         }
         if (max < min) {
           throw new Error(`Error, max should be more or equal to min, got max: ${max}, min: ${min}`);
@@ -184,6 +209,9 @@ class RandomSeed {
         if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
+        if (amount >= 100000000) {
+          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+        }
 
         const randomArrayOfMails = [];    
 
@@ -209,6 +237,9 @@ class RandomSeed {
         if (amount < 1) {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
+        if (amount >= 100000000) {
+          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+        }
     
         const randomArrayOfWords = [];
     
@@ -227,7 +258,9 @@ class RandomSeed {
         if (amountOfLetters < 1) {
           throw new Error(`Error, amountOfLetters should be more or equal to 1, got ${amount}`);
         }
-
+        if (amountOfLetters >= 100000000) {
+          throw new Error(`Error, amount of letters should be less then 100000000, got ${amountOfLetters}`);
+        }
 
         let testText = description;
         let i = 0;
@@ -235,9 +268,10 @@ class RandomSeed {
           testText += description;
         }
 
-        testText.length = amountOfLetters;
+        testText = testText.substring(0, amountOfLetters);
 
         this.result = { ...this.result, text: testText }
+        return this
       }
 }
 
