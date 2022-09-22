@@ -55,7 +55,7 @@ rseed.only().getNames(5)
 
 
 
-## What's new in version 1.2.1
+## What's new in version 1.3.0
 
 - Method only() that allows you to get one type of data, for example:
 
