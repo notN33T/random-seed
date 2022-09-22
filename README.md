@@ -25,6 +25,11 @@ rseed.getNames(5).getSurnames(2).result
 //   names: [ 'Bojan', 'Abdeus', 'Alvaro', 'Job', 'Adoniram' ],
 //   surnames: [ 'Seter', 'Hodne' ]
 // }
+
+rseed.only().getNames(5)
+
+// Result will be like  
+// [ 'Bojan', 'Abdeus', 'Alvaro', 'Job', 'Adoniram' ]
 ```
 
 
@@ -50,8 +55,15 @@ rseed.getNames(5).getSurnames(2).result
 
 
 
-## What's new in version 1.2.0
+## What's new in version 1.2.1
 
-- New method getRandomWords(amount) to generate array with random words
-- New method getTestText(amountOfLetters) to generate text with any amount of letters (default 40)
-- More error handling
+- Method only() that allows you to get one type of data, for example:
+
+```javascript
+const rseed = require('rseed')
+
+rseed.only().getNames(5)
+
+// Result will be like  
+// [ 'Bojan', 'Abdeus', 'Alvaro', 'Job', 'Adoniram' ]
+```
