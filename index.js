@@ -273,6 +273,45 @@ class RandomSeed {
         this.result = { ...this.result, text: testText }
         return this
       }
+
+      // A method to get one type of data
+      only = () => {
+        return {
+          getNames: (amount) => {
+            return this.getNames(amount).result.names;
+          },
+          getSurnames: (amount) => {
+            return this.getSurnames(amount).result.surnames;
+          },
+          getMiddleNames: (amount) => {
+            return this.getMiddleNames(amount).result.middleNames;
+          },
+          getPetsNames: (amount) => {
+            return this.getPetsNames(amount).result.pets;
+          },
+          getCountriesNames: (amount) => {
+            return this.getCountriesNames(amount).result.countries;
+          },
+          getCitiesNames: (amount) => {
+            return this.getCitiesNames(amount).result.cities;
+          },
+          getPhoneNumbers: (amount) => {
+            return this.getPhoneNumbers(amount).result.phoneNumbers;
+          },
+          getAges: (amount = 1, min = 0, max = 120) => {
+            return this.getAges(amount, min, max).result.ages;
+          },
+          getMails: (amount) => {
+            return this.getMails(amount).result.mails;
+          },
+          getRandomWords: (amount) => {
+            return this.getRandomWords(amount).result.randomWords;
+          },
+          getTestText: (amountOfLetters) => {
+            return this.getTestText(amountOfLetters).result.text;
+          },
+        }
+      }
 }
 
 module.exports = new RandomSeed()
