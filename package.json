@@ -1,13 +1,14 @@
 {
   "name": "rseed",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "Random data for seeding",
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

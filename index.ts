@@ -328,4 +328,4 @@ class RandomSeed {
       }
 }
 
-module.exports = new RandomSeed()
+export default new RandomSeed();
