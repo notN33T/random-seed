@@ -1,4 +1,4 @@
-module.exports = [
+export default [
 'Aaron',
 'Abbas',
 'Abdal-Uzza',
@@ -696,4 +696,4 @@ module.exports = [
 'Januarius',
 'Jaromir',
 'Jaropolk',
-'Yaroslav']
+'Yaroslav'];

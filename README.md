@@ -1,7 +1,7 @@
 
 # Random seed
 
-This module was created to simplify process of seeding. With this package you can get any amount of random data you need. You can use it to seed the database or for something else
+A lightweight package that provides any amount of randomized data. You can use it to seed your database or for any other such purpose.
 
 
 ## Installing
@@ -9,7 +9,7 @@ This module was created to simplify process of seeding. With this package you ca
 To install this module run
 
 ```bash
-  npm install -d rseed
+  npm install -D rseed
 ```
 
 
@@ -50,20 +50,10 @@ rseed.only().getNames(5)
 
 ## Roadmap
 
-- Add more methods
-- Add typeScript
+- More methods 💪
 
 
 
-## What's new in version 1.3.0
+## What's new in version 2.0.0
 
-- Method only() that allows you to get one type of data, for example:
-
-```javascript
-const rseed = require('rseed')
-
-rseed.only().getNames(5)
-
-// Result will be like  
-// [ 'Bojan', 'Abdeus', 'Alvaro', 'Job', 'Adoniram' ]
-```
+- Added typing 🎊

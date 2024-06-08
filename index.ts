@@ -1,16 +1,30 @@
-const names = require('./lib/data/names');
-const surnames = require('./lib/data/surnames');
-const middleNames = require('./lib/data/middlenames');
-const pets = require('./lib/data/pets');
-const countries = require('./lib/data/countries');
-const cities = require('./lib/data/cities');
-const codes = require('./lib/data/phoneCodes');
-const mails = require('./lib/data/mails');
-const randomWords = require('./lib/data/randomWords');
-const description = require('./lib/data/description');
+import names from './lib/data/names';
+import surnames from './lib/data/surnames';
+import middleNames from './lib/data/middlenames';
+import pets from './lib/data/pets';
+import countries from './lib/data/countries';
+import cities from './lib/data/cities';
+import codes from './lib/data/phoneCodes';
+import mails from './lib/data/mails';
+import randomWords from './lib/data/randomWords';
+import description from './lib/data/description';
+
+type resultObject = {
+  names?: string[],
+  surnames?: string[],
+  middleNames?: string[],
+  pets?: string[],
+  countries?: string[],
+  cities?: string[],
+  phoneNumbers?: string[],
+  ages?: number[],
+  mails?: string[],
+  randomWords?: string[],
+  text?: string,
+}
 
 class RandomSeed {
-  result = {}
+  result: resultObject = {};
 
   // Get names method
   getNames (amount = 1) {
@@ -18,15 +32,15 @@ class RandomSeed {
       throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
     }
     if (amount >= 100000000) {
-      throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+      throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
     }
 
-    const randomArrayOfNames = [];
+    const randomArrayOfNames: string[] = [];
 
     let i = 0;
     while (i <= amount - 1) {
-      randomArrayOfNames.push(names[Math.floor(Math.random() * names.length)]);
-      i ++;
+      randomArrayOfNames.push(names[Math.floor(Math.random() * names.length)]!);
+      i++;
     } 
 
     this.result = { ...this.result, names: randomArrayOfNames };
@@ -39,7 +53,7 @@ class RandomSeed {
       throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
     }
     if (amount >= 100000000) {
-      throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+      throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
     }
 
     const randomArrayOfSurnames = [];
@@ -60,7 +74,7 @@ class RandomSeed {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
       if (amount >= 100000000) {
-        throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+        throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
       }
 
       const randomArrayOfMiddleNames = [];
@@ -81,7 +95,7 @@ class RandomSeed {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
       if (amount >= 100000000) {
-        throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+        throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
       }
 
       const randomArrayOfPetsNames = [];
@@ -102,7 +116,7 @@ class RandomSeed {
         throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
       }
       if (amount >= 100000000) {
-        throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+        throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
       }
 
       const randomArrayOfCountriesNames = [];
@@ -123,7 +137,7 @@ class RandomSeed {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
         if (amount >= 100000000) {
-          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+          throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
         }
 
         const randomArrayOfCitiesNames = [];
@@ -144,7 +158,7 @@ class RandomSeed {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
         if (amount >= 100000000) {
-          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+          throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
         }
 
         const randomArrayOfPhoneNumbers = [];
@@ -174,7 +188,7 @@ class RandomSeed {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
         if (amount >= 100000000) {
-          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+          throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
         }
         if (max < min) {
           throw new Error(`Error, max should be more or equal to min, got max: ${max}, min: ${min}`);
@@ -210,7 +224,7 @@ class RandomSeed {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
         if (amount >= 100000000) {
-          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+          throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
         }
 
         const randomArrayOfMails = [];    
@@ -218,7 +232,7 @@ class RandomSeed {
         let i = 0;
         while (i <= amount - 1) {
           randomArrayOfMails.push(
-            names[Math.floor(Math.random() * names.length)] +
+            names[Math.floor(Math.random() * names.length)]! +
             Math.floor(Math.random() * 9) +
             Math.floor(Math.random() * 9) +
             Math.floor(Math.random() * 9) +
@@ -238,7 +252,7 @@ class RandomSeed {
           throw new Error(`Error, amount should be more or equal to 1, got ${amount}`);
         }
         if (amount >= 100000000) {
-          throw new Error(`Error, amount should be less then 100000000, got ${amountOfLetters}`);
+          throw new Error(`Error, amount should be less then 100000000, got ${amount}`);
         }
     
         const randomArrayOfWords = [];
@@ -256,7 +270,7 @@ class RandomSeed {
       // Get test text method
       getTestText(amountOfLetters = 50) {
         if (amountOfLetters < 1) {
-          throw new Error(`Error, amountOfLetters should be more or equal to 1, got ${amount}`);
+          throw new Error(`Error, amountOfLetters should be more or equal to 1, got ${amountOfLetters}`);
         }
         if (amountOfLetters >= 100000000) {
           throw new Error(`Error, amount of letters should be less then 100000000, got ${amountOfLetters}`);
@@ -277,41 +291,41 @@ class RandomSeed {
       // A method to get one type of data
       only = () => {
         return {
-          getNames: (amount) => {
+          getNames: (amount: number) => {
             return this.getNames(amount).result.names;
           },
-          getSurnames: (amount) => {
+          getSurnames: (amount: number) => {
             return this.getSurnames(amount).result.surnames;
           },
-          getMiddleNames: (amount) => {
+          getMiddleNames: (amount: number) => {
             return this.getMiddleNames(amount).result.middleNames;
           },
-          getPetsNames: (amount) => {
+          getPetsNames: (amount: number) => {
             return this.getPetsNames(amount).result.pets;
           },
-          getCountriesNames: (amount) => {
+          getCountriesNames: (amount: number) => {
             return this.getCountriesNames(amount).result.countries;
           },
-          getCitiesNames: (amount) => {
+          getCitiesNames: (amount: number) => {
             return this.getCitiesNames(amount).result.cities;
           },
-          getPhoneNumbers: (amount) => {
+          getPhoneNumbers: (amount: number) => {
             return this.getPhoneNumbers(amount).result.phoneNumbers;
           },
           getAges: (amount = 1, min = 0, max = 120) => {
             return this.getAges(amount, min, max).result.ages;
           },
-          getMails: (amount) => {
+          getMails: (amount: number) => {
             return this.getMails(amount).result.mails;
           },
-          getRandomWords: (amount) => {
+          getRandomWords: (amount: number) => {
             return this.getRandomWords(amount).result.randomWords;
           },
-          getTestText: (amountOfLetters) => {
+          getTestText: (amountOfLetters: number) => {
             return this.getTestText(amountOfLetters).result.text;
           },
         }
       }
 }
 
-module.exports = new RandomSeed()
+export default new RandomSeed();
