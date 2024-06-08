@@ -328,4 +328,6 @@ class RandomSeed {
       }
 }
 
-export default new RandomSeed();
+const rseed = new RandomSeed();
+
+export { rseed };

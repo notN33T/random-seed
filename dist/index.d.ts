@@ -38,5 +38,5 @@ declare class RandomSeed {
         getTestText: (amountOfLetters: number) => string | undefined;
     };
 }
-declare const _default: RandomSeed;
-export default _default;
+declare const rseed: RandomSeed;
+export { rseed };

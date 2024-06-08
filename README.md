@@ -16,7 +16,9 @@ To install this module run
 ## Usage/Examples
 
 ```javascript
-const rseed = require('rseed')
+const { rseed } = require('rseed');
+// or
+import { rseed } from 'rseed';
 
 rseed.getNames(5).getSurnames(2).result
 
@@ -51,9 +53,3 @@ rseed.only().getNames(5)
 ## Roadmap
 
 - More methods 💪
-
-
-
-## What's new in version 2.0.0
-
-- Added typing 🎊
