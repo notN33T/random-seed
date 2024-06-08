@@ -51,19 +51,9 @@ rseed.only().getNames(5)
 ## Roadmap
 
 - Add more methods
-- Add typeScript
 
 
 
-## What's new in version 1.3.0
+## What's new in version 2.0.0
 
-- Method only() that allows you to get one type of data, for example:
-
-```javascript
-const rseed = require('rseed')
-
-rseed.only().getNames(5)
-
-// Result will be like  
-// [ 'Bojan', 'Abdeus', 'Alvaro', 'Job', 'Adoniram' ]
-```
+- Added Typescript :
