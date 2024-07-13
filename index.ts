@@ -24,7 +24,14 @@ type resultObject = {
 }
 
 class RandomSeed {
-  result: resultObject = {};
+  private _result: resultObject = {};
+
+  /**
+  * @deprecated since version 3.0. Will be removed in the future.
+ */
+  get result() {
+    return this._result;
+  }
 
   // Get names method
   getNames (amount = 1) {
@@ -43,7 +50,7 @@ class RandomSeed {
       i++;
     } 
 
-    this.result = { ...this.result, names: randomArrayOfNames };
+    this._result = { ...this._result, names: randomArrayOfNames };
     return this;
   }
 
@@ -64,7 +71,7 @@ class RandomSeed {
       i ++;
     }
 
-    this.result = { ...this.result, surnames: randomArrayOfSurnames };
+    this._result = { ...this._result, surnames: randomArrayOfSurnames };
     return this;
   }
 
@@ -85,7 +92,7 @@ class RandomSeed {
         i ++;
       }
   
-      this.result = { ...this.result, middleNames: randomArrayOfMiddleNames };
+      this._result = { ...this._result, middleNames: randomArrayOfMiddleNames };
       return this;
     }
     
@@ -106,7 +113,7 @@ class RandomSeed {
         i ++;
       } 
   
-      this.result = { ...this.result, pets: randomArrayOfPetsNames };
+      this._result = { ...this._result, pets: randomArrayOfPetsNames };
       return this;
     }
 
@@ -127,7 +134,7 @@ class RandomSeed {
         i ++;
       }
   
-      this.result = { ...this.result, countries: randomArrayOfCountriesNames };
+      this._result = { ...this._result, countries: randomArrayOfCountriesNames };
       return this;
     }
 
@@ -148,7 +155,7 @@ class RandomSeed {
           i ++;
         }
     
-        this.result = { ...this.result, cities: randomArrayOfCitiesNames };
+        this._result = { ...this._result, cities: randomArrayOfCitiesNames };
         return this;
       }
 
@@ -178,7 +185,7 @@ class RandomSeed {
           i ++;
         }
       
-        this.result = { ...this.result, phoneNumbers: randomArrayOfPhoneNumbers };
+        this._result = { ...this._result, phoneNumbers: randomArrayOfPhoneNumbers };
         return this;
       }
 
@@ -214,7 +221,7 @@ class RandomSeed {
           i++;
         }
       
-        this.result = { ...this.result, ages: randomArrayOfAges };
+        this._result = { ...this._result, ages: randomArrayOfAges };
         return this;
       }
 
@@ -242,7 +249,7 @@ class RandomSeed {
           i ++;
         }
     
-        this.result = { ...this.result, mails: randomArrayOfMails };
+        this._result = { ...this._result, mails: randomArrayOfMails };
         return this;
       }
 
@@ -263,7 +270,7 @@ class RandomSeed {
           i ++;
         }
     
-        this.result = { ...this.result, randomWords: randomArrayOfWords };
+        this._result = { ...this._result, randomWords: randomArrayOfWords };
         return this;
       }
 
@@ -284,45 +291,50 @@ class RandomSeed {
 
         testText = testText.substring(0, amountOfLetters);
 
-        this.result = { ...this.result, text: testText }
-        return this
+        this._result = { ...this._result, text: testText }
+        return this;
+      }
+
+      // Get result text method
+      getResult() {
+        return this._result;
       }
 
       // A method to get one type of data
       only = () => {
         return {
           getNames: (amount: number) => {
-            return this.getNames(amount).result.names;
+            return this.getNames(amount)._result.names;
           },
           getSurnames: (amount: number) => {
-            return this.getSurnames(amount).result.surnames;
+            return this.getSurnames(amount)._result.surnames;
           },
           getMiddleNames: (amount: number) => {
-            return this.getMiddleNames(amount).result.middleNames;
+            return this.getMiddleNames(amount)._result.middleNames;
           },
           getPetsNames: (amount: number) => {
-            return this.getPetsNames(amount).result.pets;
+            return this.getPetsNames(amount)._result.pets;
           },
           getCountriesNames: (amount: number) => {
-            return this.getCountriesNames(amount).result.countries;
+            return this.getCountriesNames(amount)._result.countries;
           },
           getCitiesNames: (amount: number) => {
-            return this.getCitiesNames(amount).result.cities;
+            return this.getCitiesNames(amount)._result.cities;
           },
           getPhoneNumbers: (amount: number) => {
-            return this.getPhoneNumbers(amount).result.phoneNumbers;
+            return this.getPhoneNumbers(amount)._result.phoneNumbers;
           },
           getAges: (amount = 1, min = 0, max = 120) => {
-            return this.getAges(amount, min, max).result.ages;
+            return this.getAges(amount, min, max)._result.ages;
           },
           getMails: (amount: number) => {
-            return this.getMails(amount).result.mails;
+            return this.getMails(amount)._result.mails;
           },
           getRandomWords: (amount: number) => {
-            return this.getRandomWords(amount).result.randomWords;
+            return this.getRandomWords(amount)._result.randomWords;
           },
           getTestText: (amountOfLetters: number) => {
-            return this.getTestText(amountOfLetters).result.text;
+            return this.getTestText(amountOfLetters)._result.text;
           },
         }
       }

@@ -12,7 +12,11 @@ type resultObject = {
     text?: string;
 };
 declare class RandomSeed {
-    result: resultObject;
+    private _result;
+    /**
+    * @deprecated since version 3.0. Will be removed in the future.
+   */
+    get result(): resultObject;
     getNames(amount?: number): this;
     getSurnames(amount?: number): this;
     getMiddleNames(amount?: number): this;
@@ -24,6 +28,7 @@ declare class RandomSeed {
     getMails(amount?: number): this;
     getRandomWords(amount?: number): this;
     getTestText(amountOfLetters?: number): this;
+    getResult(): resultObject;
     only: () => {
         getNames: (amount: number) => string[] | undefined;
         getSurnames: (amount: number) => string[] | undefined;
